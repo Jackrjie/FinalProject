@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="title_activity_maps"></string>
+    <string name="title_activity_login">登入</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">輸入賬號</string>
+    <string name="prompt_password">輸入密碼</string>
+    <string name="action_sign_in">登入</string>
+    <string name="action_sign_in_short">登入</string>
+    <string name="error_invalid_email">賬號不存在，請重新輸入</string>
+    <string name="error_invalid_password">密碼字數太短，請重新輸入</string>
+    <string name="error_incorrect_password">密碼不正確</string>
+    <string name="error_field_required">此欄位必填</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+</resources>

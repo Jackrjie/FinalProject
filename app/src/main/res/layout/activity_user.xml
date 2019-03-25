@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.trion.driveruser.UserActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_user"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:minHeight="?attr/actionBarSize">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:paddingRight="30dp"
+                android:gravity="center"
+                android:text="個人資料"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_medium"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+                android:background="@color/grey">
+
+                <ImageView
+                    android:id="@+id/yui"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/person" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="賬號： "
+                        android:textSize="16sp"
+                        android:textStyle="normal"/>
+
+                    <TextView
+                        android:id="@+id/tv_userID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="測試員"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_medium"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="70dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_action_user"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:text="用戶姓名： "/>
+
+                <TextView
+                    android:id="@+id/tv_userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center_vertical"
+                    android:textSize="16sp"
+                    android:text="測試員"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="0.1"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="0.8"
+                    android:background="@color/grey_medium"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="0.1"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="70dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_phone"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:text="聯絡方式： "/>
+
+                <TextView
+                    android:id="@+id/tv_userPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center_vertical"
+                    android:textSize="16sp"
+                    android:text="123123123"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_medium"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp">
+                    <Button
+                        android:id="@+id/btnHistory"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/my_button_bg"
+                        android:layout_gravity="center"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="10dp"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        android:text="寄送記錄"
+                        android:drawableTop="@drawable/history"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp">
+                    <Button
+                        android:id="@+id/btnManagement"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/my_button_bg"
+                        android:layout_gravity="center"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="10dp"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        android:text="車輛管理"
+                        android:drawableTop="@drawable/bus"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/btnLogout"
+                    android:layout_width="220dp"
+                    android:layout_height="40dp"
+                    android:paddingLeft="70dp"
+                    android:paddingRight="70dp"
+                    android:background="@drawable/btn_logout_bg"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="登出"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@drawable/power"
+                    android:drawablePadding="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
